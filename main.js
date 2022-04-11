@@ -44,15 +44,11 @@ function sixthTask(){
      
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-
 function seventhTask(n){
      let array = [];
      let odds = []
      for(let i =0; i <n; i++){
-        let el = getRandomInt(100)
+        let el = Math.floor(Math.random() * 100);
         array.push(el);
         if (el%2 ==1){
             odds.push(el)
@@ -87,9 +83,11 @@ function eightTask(){
 
 FirstTask();
 SecondTask(5, 2, 7);
+
 let r = 2;
 let h = 5;
 console.log("\nThird Task:\nr = ", r, "\nh = ", h, "\nV = ",cylinderVolume(r, h), "\nS = ", cylinderSquare(r,h))
+
 forthTask(2, 10);
 
 
